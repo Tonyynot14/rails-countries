@@ -1,0 +1,12 @@
+<a href="/countries/new">New</a>
+
+<% @countries.each do |country|  %>
+
+
+<div>
+    <a href= "/countries/edit?id=<%= country.id%>">Edit</a>
+   <%= country.question %> 
+   <%= country.answer %> 
+   <%= country.flag %> 
+</div>
+<% end %>
